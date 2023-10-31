@@ -9,14 +9,18 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function sum(a, b) { //eslint-disable-line
-  let total = a + b;
-  return [total, `The sum of ${a} and ${b} is ${total}.`];
+  let addParameters = sum(a,b);
+  let concatArray = a.concat(b);
+  let testSumArray = [addParameters, concatArray];
+
+
+  return testSumArray;
 
 }
 
 // Here is the test for sum(); uncomment it to run it
 // eslint-disable-next-line no-undef
-testSum(4, 7);
+//testSum(4, 7);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
@@ -30,14 +34,11 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function multiply(a, b) { //eslint-disable-line
-  let product = a * b;
-  return [product, `The product of ${a} and ${b} is ${product}.`];
 
 }
 
 // Here is the test for multiply(); uncomment it to run it
-// eslint-disable-next-line no-undef
-testMultiply(5,9);
+// testMultiply(5,9);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
@@ -54,18 +55,11 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function sumAndMultiply(a, b, c) { //eslint-disable-line
-  // eslint-disable-next-line no-undef, new-cap
-  let sumQuestion3 = a + b + c;
-  // eslint-disable-next-line no-undef
-  let multiplyQuestion3 = a * b *c;
-  // eslint-disable-next-line no-undef
-  return[sumQuestion3, multiplyQuestion3, `The sum of ${a} and ${b} and {c} is ${sumQuestion3} and The product of ${a} and ${b} and ${c} is ${multiplyQuestion3}.`];
 
 }
 
 // Here is the test for sumAndMultiply(); uncomment it to run it
-// eslint-disable-next-line no-undef
-//testSumAndMultiply(4,7,5);
+// testSumAndMultiply(4,7,5);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
@@ -83,14 +77,12 @@ Test this function by hand in the console to get it working, and when you think 
 let testArray = [2, 3, 4]; //eslint-disable-line
 
 function sumArray(sumArr) { //eslint-disable-line
-  let testArray2 = 2 + 3 + 4
-  return [9, `The sum of 2 and 3 and 4 is 9.`];
+
 }
 
 // Here is the test for sumArray(); uncomment it to run it
 
-// eslint-disable-next-line no-undef
-testSumArray(testArray);
+// testSumArray(testArray);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
