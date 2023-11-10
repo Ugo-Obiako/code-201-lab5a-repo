@@ -84,12 +84,11 @@ let testArray = [2, 3, 4]; //eslint-disable-line
 
 
 function sumArray(sumArr) { //eslint-disable-line
-  //console.log(sumArr)
   let sum1 =sum((sum(sumArr[0], sumArr[1])), sumArr[2])
   console.log(sum1)
   let sum2 = sum1[0]
   //console.log(sum2)
- // return [sum2[0], `${sumArr[0]}, ${sumArr[1]}, ${sumArr[2]} was passed in as an array of numbers, and ${sum2[0]} is their sum.`];
+ return [sum2[0], `${sumArr[0]}, ${sumArr[1]}, ${sumArr[2]} was passed in as an array of numbers, and ${sum2[0]} is their sum.`];
 }
 
 // Here is the test for sumArray(); uncomment it to run it
@@ -111,12 +110,8 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function multiplyArray(multArr) { //eslint-disable-line
-    multArr = [x, y, z];
-    x = multArr[0]
-    y = multArr[1]
-    z = multArr[2]
-    firstElement = x * y * z
-    return [firstElement, `The numbers ${multArr[0]}, ${multArr[1]} and ${multArr[2]} have a product of ${firstElement}.`]
+    let productArr = multiply ((multArr[0], multArr[1]), multArr[2]);
+    return [productArr[0], `The numbers ${multArr[0]}, ${multArr[1]}, ${multArr[2]} have a product of ${productArr[0]}.`]
 
 }
 
